@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ფონის ფერის შეცვლა</title>
+	<style>
+		body {
+			background-color: white;
+		}
+        #green-btn{
+            background-color: green;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+            font-size: large;
+            font-weight: 400;
+            color: aliceblue;
+            border: none;
+            border-radius: 50px;
+            padding:10%;
+        }
+        #blue-btn{
+            background-color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+            font-size: large;
+            font-weight: 400;
+            color: aliceblue;
+            border: none;
+            border-radius: 50px;
+            padding:10%;
+            
+        }
+	</style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+	<h1 class="text-black-50">შეცვალე ფონის ფერი</h1>
+    <div class="mt-5">
+	<button id="green-btn">მწვანე</button>
+	<button id="blue-btn">ლურჯი</button>
+</div>
+	<script>
+		document.getElementById("green-btn").addEventListener("click", function(){
+			document.body.style.backgroundColor = "მწვანე";
+		});
+		document.getElementById("blue-btn").addEventListener("click", function(){
+			document.body.style.backgroundColor = "ლურჯი";
+		});
+	</script>
+</body>
+</html>
